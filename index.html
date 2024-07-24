@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <style>
+     .main{
+        display:flex;
+        justify-content: space-between;
+        flex-direction:column;
+     }
+     a{
+        color: rgb(57, 194, 228);
+     }
+    
+     h3{
+         color:rgb(25, 158, 114);
+     }
+   button{
+    height:50px;
+    color:black;
+    width:150px;
+    border-radius:40px;
+    border:none;
+    cursor:pointer;
+
+   }
+     .cart{
+        background-color: rgb(242, 207, 48);
+        margin-right:30px;
+        transition:background 1s, width 1s,height 1s; 
+     }
+     .cart:hover{
+        height:100px;
+        width:300px;
+     }
+     .cart:active{
+        background-color: aquamarine;
+        cursor: grabbing;
+     }
+     .buy{
+        background-color:rgb(225, 159, 36);
+        color:white;
+        transition:box-shadow 1s,height 1s,width 1s; 
+     }
+     .buy:hover{
+        height:100px;
+        width:300px;
+        box-shadow:8px 8px 4px rgba(0, 0, 0, 0.5)
+     }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <a href="www.amazon.com" target="_self">Back to Amazon</a>
+        <h1>Nike Black Running Shoes</h1>
+        <h3>$39 - in stock.</h3>
+        <p>Free delievery tommorrow.</p>
+        <div class="btn">
+            <button class="cart">Add to Cart</button>
+            <button class="buy">Buy now</button>
+        </div>
+    </div>
+
+</body>
+</html>
